@@ -1,0 +1,35 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Кривые_Платформы_2_no_bg_preview_carve_photos.png-0291213dc64c2cb2561a74a4fbe1ef9b.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://картинки/магич/Кривые_Платформы_2_no_bg_preview_carve_photos.png"
+dest_files=[ "res://.import/Кривые_Платформы_2_no_bg_preview_carve_photos.png-0291213dc64c2cb2561a74a4fbe1ef9b.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

@@ -1,0 +1,670 @@
+[gd_scene load_steps=26 format=2]
+
+[ext_resource path="res://gg.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Platform.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Menu.gd" type="Script" id=3]
+[ext_resource path="res://Menu.tscn" type="PackedScene" id=4]
+[ext_resource path="res://картинки/обычные/Платформа земли.png" type="Texture" id=5]
+[ext_resource path="res://картинки/обычные/ЗЕМЛЯ!.png" type="Texture" id=6]
+[ext_resource path="res://картинки/обычные/Цветочеек-no-bg-preview (carve.photos).png" type="Texture" id=7]
+[ext_resource path="res://картинки/обычные/трава правая.png" type="Texture" id=8]
+[ext_resource path="res://елки и декор/Елка 2-no-bg-preview (carve.photos) — копия.png" type="Texture" id=9]
+[ext_resource path="res://картинки/обычные/cmi_dc2a0482-no-bg-preview (carve.photos) (1).png" type="Texture" id=10]
+[ext_resource path="res://елки и декор/Фон_ Горы_ (1)-no-bg-preview (carve.photos).png" type="Texture" id=11]
+[ext_resource path="res://елки и декор/Фон_ Горы (2)-no-bg-preview (carve.photos) (1).png" type="Texture" id=12]
+[ext_resource path="res://картинки/обычные/Еще деревья 3-no-bg-preview (carve.photos).png" type="Texture" id=13]
+[ext_resource path="res://елки и декор/трава-no-bg-preview (carve.photos).png" type="Texture" id=14]
+[ext_resource path="res://картинки/обычные/Странное облачко-no-bg-preview (carve.photos).png" type="Texture" id=15]
+[ext_resource path="res://картинки/обычные/Красивое облачко-no-bg-preview (carve.photos).png" type="Texture" id=16]
+[ext_resource path="res://картинки/обычные/Красивое_облачко_2_no_bg_preview_carve_photos.png" type="Texture" id=17]
+[ext_resource path="res://картинки/обычные/Еще деревья 2-no-bg-preview (carve.photos).png" type="Texture" id=18]
+[ext_resource path="res://КрасивыйКамень1NoBgPreviewCarvePhotos.tscn" type="PackedScene" id=19]
+[ext_resource path="res://картинки/магич/Кривое облако (5)-no-bg-preview (carve.photos).png" type="Texture" id=20]
+[ext_resource path="res://Коряга1-no-bg-preview(carvephotos).tscn" type="PackedScene" id=21]
+[ext_resource path="res://Коряга2-no-bg-preview(carvephotos)(1).tscn" type="PackedScene" id=22]
+[ext_resource path="res://картинки/обычные/Еще деревья-no-bg-preview (carve.photos).png" type="Texture" id=23]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 2269, 139.375 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 1267.19, 442.75 )
+
+[node name="Main" type="Node2D"]
+position = Vector2( 400, -197 )
+script = ExtResource( 3 )
+
+[node name="Menu" parent="." instance=ExtResource( 4 )]
+margin_left = -7808.0
+margin_top = -939.0
+margin_right = -5842.0
+margin_bottom = 31.0
+
+[node name="Фон" type="StaticBody2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Фон"]
+margin_left = -3332.0
+margin_top = -364.0
+margin_right = 9575.0
+margin_bottom = 4068.0
+color = Color( 0.0862745, 0.4, 0.654902, 1 )
+
+[node name="КрасивоеОблачко2NoBgPreviewCarvePhotos" type="Sprite" parent="Фон/ColorRect"]
+position = Vector2( 4370, 2024 )
+scale = Vector2( 1.4172, 1.60345 )
+texture = ExtResource( 17 )
+
+[node name="Цветочеек-no-bg-preview(carvephotos)" type="Sprite" parent="Фон/ColorRect"]
+position = Vector2( 8461, 2738 )
+scale = Vector2( 0.391376, 0.359005 )
+texture = ExtResource( 7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Фон"]
+position = Vector2( 1294, 2321 )
+shape = SubResource( 1 )
+
+[node name="ФонГоры(2)-no-bg-preview(carvephotos)(1)" type="Sprite" parent="Фон"]
+position = Vector2( 761.5, 1637.75 )
+scale = Vector2( 2.87819, 2.71554 )
+texture = ExtResource( 12 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ФонГоры(1)-no-bg-preview(carvephotos)" type="Sprite" parent="Фон/ФонГоры(2)-no-bg-preview(carvephotos)(1)"]
+position = Vector2( 658.745, -11.8761 )
+scale = Vector2( 0.999899, 1.14327 )
+texture = ExtResource( 11 )
+
+[node name="ФонГоры(2)-no-bg-preview(carvephotos)(1)" type="Sprite" parent="Фон/ФонГоры(2)-no-bg-preview(carvephotos)(1)"]
+position = Vector2( -252.08, 121.116 )
+scale = Vector2( 0.388113, 0.388699 )
+texture = ExtResource( 12 )
+
+[node name="Елка2-no-bg-preview(carvephotos)—Копия" type="Sprite" parent="Фон/ФонГоры(2)-no-bg-preview(carvephotos)(1)"]
+position = Vector2( 551.909, 93.2596 )
+scale = Vector2( 0.983256, 1.01009 )
+texture = ExtResource( 9 )
+
+[node name="ЕщеДеревья3-no-bg-preview(carvephotos)" type="Sprite" parent="Фон/ФонГоры(2)-no-bg-preview(carvephotos)(1)"]
+position = Vector2( -473.735, 103.571 )
+scale = Vector2( 0.732681, 0.765574 )
+texture = ExtResource( 13 )
+
+[node name="ЕщеДеревья2-no-bg-preview(carvephotos)" type="Sprite" parent="Фон/ФонГоры(2)-no-bg-preview(carvephotos)(1)"]
+position = Vector2( -533.147, 163.227 )
+scale = Vector2( 0.298582, 0.2765 )
+texture = ExtResource( 18 )
+
+[node name="ЕщеДеревья-no-bg-preview(carvephotos)" type="Sprite" parent="Фон/ФонГоры(2)-no-bg-preview(carvephotos)(1)"]
+position = Vector2( 1426.76, 122.72 )
+scale = Vector2( 1.03445, 1.42345 )
+texture = ExtResource( 23 )
+
+[node name="Platform" parent="Фон" instance=ExtResource( 2 )]
+position = Vector2( -409, 2168 )
+scale = Vector2( 0.653333, 0.514286 )
+
+[node name="ПлатформаЗемли" type="Sprite" parent="Фон"]
+position = Vector2( 1424, 2241 )
+texture = ExtResource( 5 )
+
+[node name="ПлатформаЗемли2" type="Sprite" parent="Фон/ПлатформаЗемли"]
+position = Vector2( 252, 0 )
+texture = ExtResource( 5 )
+
+[node name="ПлатформаЗемли3" type="Sprite" parent="Фон/ПлатформаЗемли"]
+position = Vector2( 506, 0 )
+texture = ExtResource( 5 )
+
+[node name="ПлатформаЗемли4" type="Sprite" parent="Фон/ПлатформаЗемли"]
+position = Vector2( 756, 0 )
+texture = ExtResource( 5 )
+
+[node name="ПлатформаЗемли5" type="Sprite" parent="Фон/ПлатформаЗемли"]
+position = Vector2( 1767, 0 )
+texture = ExtResource( 5 )
+
+[node name="ПлатформаЗемли6" type="Sprite" parent="Фон/ПлатформаЗемли"]
+position = Vector2( 2023, -1 )
+texture = ExtResource( 5 )
+
+[node name="ПлатформаЗемли8" type="Sprite" parent="Фон/ПлатформаЗемли"]
+position = Vector2( 1511, 0 )
+texture = ExtResource( 5 )
+
+[node name="ПлатформаЗемли" type="Sprite" parent="Фон/ПлатформаЗемли"]
+position = Vector2( 1006, 0 )
+texture = ExtResource( 5 )
+
+[node name="ПлатформаЗемли7" type="Sprite" parent="Фон/ПлатформаЗемли"]
+position = Vector2( 1255, 0 )
+texture = ExtResource( 5 )
+
+[node name="ТраваПравая" type="Sprite" parent="Фон/ПлатформаЗемли"]
+position = Vector2( 2082, -33 )
+texture = ExtResource( 8 )
+
+[node name="ПлатформаЗемли9" type="Sprite" parent="Фон/ПлатформаЗемли"]
+position = Vector2( 2892, 224 )
+texture = ExtResource( 5 )
+
+[node name="ПлатформаЗемли2" type="Sprite" parent="Фон/ПлатформаЗемли/ПлатформаЗемли9"]
+position = Vector2( 252, 0 )
+texture = ExtResource( 5 )
+
+[node name="ПлатформаЗемли3" type="Sprite" parent="Фон/ПлатформаЗемли/ПлатформаЗемли9"]
+position = Vector2( 506, 0 )
+texture = ExtResource( 5 )
+
+[node name="ПлатформаЗемли4" type="Sprite" parent="Фон/ПлатформаЗемли/ПлатформаЗемли9"]
+position = Vector2( 756, 0 )
+texture = ExtResource( 5 )
+
+[node name="ПлатформаЗемли8" type="Sprite" parent="Фон/ПлатформаЗемли/ПлатформаЗемли9"]
+position = Vector2( 1511, 0 )
+texture = ExtResource( 5 )
+
+[node name="ПлатформаЗемли" type="Sprite" parent="Фон/ПлатформаЗемли/ПлатформаЗемли9"]
+position = Vector2( 1006, 0 )
+texture = ExtResource( 5 )
+
+[node name="ПлатформаЗемли7" type="Sprite" parent="Фон/ПлатформаЗемли/ПлатформаЗемли9"]
+position = Vector2( 1255, 0 )
+texture = ExtResource( 5 )
+
+[node name="ПлатформаЗемли10" type="Sprite" parent="Фон/ПлатформаЗемли"]
+position = Vector2( -2279, -1 )
+texture = ExtResource( 5 )
+
+[node name="ПлатформаЗемли2" type="Sprite" parent="Фон/ПлатформаЗемли/ПлатформаЗемли10"]
+position = Vector2( 252, 0 )
+texture = ExtResource( 5 )
+
+[node name="ПлатформаЗемли3" type="Sprite" parent="Фон/ПлатформаЗемли/ПлатформаЗемли10"]
+position = Vector2( 506, 0 )
+texture = ExtResource( 5 )
+
+[node name="ПлатформаЗемли4" type="Sprite" parent="Фон/ПлатформаЗемли/ПлатформаЗемли10"]
+position = Vector2( 756, 0 )
+texture = ExtResource( 5 )
+
+[node name="ПлатформаЗемли5" type="Sprite" parent="Фон/ПлатформаЗемли/ПлатформаЗемли10"]
+position = Vector2( 1767, 0 )
+texture = ExtResource( 5 )
+
+[node name="ПлатформаЗемли6" type="Sprite" parent="Фон/ПлатформаЗемли/ПлатформаЗемли10"]
+position = Vector2( 2023, 1 )
+texture = ExtResource( 5 )
+
+[node name="ПлатформаЗемли8" type="Sprite" parent="Фон/ПлатформаЗемли/ПлатформаЗемли10"]
+position = Vector2( 1511, 0 )
+texture = ExtResource( 5 )
+
+[node name="ПлатформаЗемли" type="Sprite" parent="Фон/ПлатформаЗемли/ПлатформаЗемли10"]
+position = Vector2( 1011, -1 )
+texture = ExtResource( 5 )
+
+[node name="ПлатформаЗемли7" type="Sprite" parent="Фон/ПлатформаЗемли/ПлатформаЗемли10"]
+position = Vector2( 1255, 0 )
+texture = ExtResource( 5 )
+
+[node name="Трава-no-bg-preview(carvephotos)" type="Sprite" parent="Фон/ПлатформаЗемли/ПлатформаЗемли10"]
+position = Vector2( 283, -86 )
+scale = Vector2( 1.22063, 1.73702 )
+texture = ExtResource( 14 )
+
+[node name="CmiDc2A0482-no-bg-preview(carvephotos)(1)" type="Sprite" parent="Фон/ПлатформаЗемли"]
+position = Vector2( -2367.84, -45.4202 )
+rotation = 0.0964243
+scale = Vector2( 1.01219, 1.00711 )
+texture = ExtResource( 10 )
+
+[node name="Цветочеек-no-bg-preview(carvephotos)" type="Sprite" parent="Фон/ПлатформаЗемли"]
+position = Vector2( 259.75, -113 )
+scale = Vector2( 0.555172, 0.502369 )
+texture = ExtResource( 7 )
+
+[node name="КрасивыйКамень1NoBgPreviewCarvePhotos" parent="Фон/ПлатформаЗемли" instance=ExtResource( 19 )]
+position = Vector2( -426, -82 )
+scale = Vector2( 0.754074, 0.458454 )
+
+[node name="Земля!" type="Sprite" parent="Фон"]
+position = Vector2( 3446, 2431 )
+texture = ExtResource( 6 )
+
+[node name="Земля!2" type="Sprite" parent="Фон/Земля!"]
+position = Vector2( -1518, 0 )
+texture = ExtResource( 6 )
+
+[node name="Земля!23" type="Sprite" parent="Фон/Земля!"]
+position = Vector2( -1518, 0 )
+texture = ExtResource( 6 )
+
+[node name="Земля!4" type="Sprite" parent="Фон/Земля!"]
+position = Vector2( -1264, 0 )
+texture = ExtResource( 6 )
+
+[node name="Земля!14" type="Sprite" parent="Фон/Земля!"]
+position = Vector2( -4429, 0 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!3" type="Sprite" parent="Фон/Земля!/Земля!14"]
+position = Vector2( 251, 0 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!12" type="Sprite" parent="Фон/Земля!/Земля!14"]
+position = Vector2( 502, -1 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!17" type="Sprite" parent="Фон/Земля!"]
+position = Vector2( -4431, 254 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!3" type="Sprite" parent="Фон/Земля!/Земля!17"]
+position = Vector2( 251, 0 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!12" type="Sprite" parent="Фон/Земля!/Земля!17"]
+position = Vector2( 502, -1 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!18" type="Sprite" parent="Фон/Земля!"]
+position = Vector2( -4430, 504 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!3" type="Sprite" parent="Фон/Земля!/Земля!18"]
+position = Vector2( 251, 0 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!12" type="Sprite" parent="Фон/Земля!/Земля!18"]
+position = Vector2( 502, -1 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!19" type="Sprite" parent="Фон/Земля!"]
+position = Vector2( -3674, 254 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!3" type="Sprite" parent="Фон/Земля!/Земля!19"]
+position = Vector2( 251, 0 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!12" type="Sprite" parent="Фон/Земля!/Земля!19"]
+position = Vector2( 502, -1 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!20" type="Sprite" parent="Фон/Земля!"]
+position = Vector2( -3672, 507 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!3" type="Sprite" parent="Фон/Земля!/Земля!20"]
+position = Vector2( 251, 0 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!12" type="Sprite" parent="Фон/Земля!/Земля!20"]
+position = Vector2( 502, -1 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!5" type="Sprite" parent="Фон/Земля!"]
+position = Vector2( -1770, -2 )
+texture = ExtResource( 6 )
+
+[node name="Земля!6" type="Sprite" parent="Фон/Земля!"]
+position = Vector2( -1015, 0 )
+texture = ExtResource( 6 )
+
+[node name="Земля!7" type="Sprite" parent="Фон/Земля!"]
+position = Vector2( -767, 0 )
+texture = ExtResource( 6 )
+
+[node name="Земля!8" type="Sprite" parent="Фон/Земля!"]
+position = Vector2( -511, 0 )
+texture = ExtResource( 6 )
+
+[node name="Земля!9" type="Sprite" parent="Фон/Земля!"]
+position = Vector2( -256, 1 )
+texture = ExtResource( 6 )
+
+[node name="Земля!15" type="Sprite" parent="Фон/Земля!"]
+position = Vector2( -1770, -2 )
+texture = ExtResource( 6 )
+
+[node name="Земля!16" type="Sprite" parent="Фон/Земля!"]
+position = Vector2( -1015, 0 )
+texture = ExtResource( 6 )
+
+[node name="Земля!11" type="Sprite" parent="Фон/Земля!"]
+position = Vector2( -1518, 0 )
+texture = ExtResource( 6 )
+
+[node name="Земля!4" type="Sprite" parent="Фон/Земля!/Земля!11"]
+position = Vector2( 254, 0 )
+texture = ExtResource( 6 )
+
+[node name="Земля!7" type="Sprite" parent="Фон/Земля!/Земля!11"]
+position = Vector2( 751, 0 )
+texture = ExtResource( 6 )
+
+[node name="Земля!8" type="Sprite" parent="Фон/Земля!/Земля!11"]
+position = Vector2( 1011, 252 )
+texture = ExtResource( 6 )
+
+[node name="Земля!9" type="Sprite" parent="Фон/Земля!/Земля!11/Земля!8"]
+position = Vector2( 255, 1 )
+texture = ExtResource( 6 )
+
+[node name="Земля!10" type="Sprite" parent="Фон/Земля!/Земля!11/Земля!8"]
+position = Vector2( 511, 0 )
+texture = ExtResource( 6 )
+
+[node name="Земля!10" type="Sprite" parent="Фон/Земля!/Земля!11"]
+position = Vector2( 244, 254 )
+texture = ExtResource( 6 )
+
+[node name="Земля!9" type="Sprite" parent="Фон/Земля!/Земля!11/Земля!10"]
+position = Vector2( 255, 1 )
+texture = ExtResource( 6 )
+
+[node name="Земля!10" type="Sprite" parent="Фон/Земля!/Земля!11/Земля!10"]
+position = Vector2( 511, 0 )
+texture = ExtResource( 6 )
+
+[node name="Земля!11" type="Sprite" parent="Фон/Земля!/Земля!11"]
+position = Vector2( 247, 505 )
+texture = ExtResource( 6 )
+
+[node name="Земля!9" type="Sprite" parent="Фон/Земля!/Земля!11/Земля!11"]
+position = Vector2( 255, 1 )
+texture = ExtResource( 6 )
+
+[node name="Земля!10" type="Sprite" parent="Фон/Земля!/Земля!11/Земля!11"]
+position = Vector2( 511, 0 )
+texture = ExtResource( 6 )
+
+[node name="Земля!9" type="Sprite" parent="Фон/Земля!/Земля!11"]
+position = Vector2( 1013, 507 )
+texture = ExtResource( 6 )
+
+[node name="Земля!9" type="Sprite" parent="Фон/Земля!/Земля!11/Земля!9"]
+position = Vector2( 255, 1 )
+texture = ExtResource( 6 )
+
+[node name="Земля!10" type="Sprite" parent="Фон/Земля!/Земля!11/Земля!9"]
+position = Vector2( 511, 0 )
+texture = ExtResource( 6 )
+
+[node name="Земля!25" type="Sprite" parent="Фон/Земля!/Земля!11/Земля!9/Земля!10"]
+position = Vector2( 2625, -538.5 )
+scale = Vector2( 1, 1.02734 )
+texture = ExtResource( 6 )
+
+[node name="Земля!25" type="Sprite" parent="Фон/Земля!/Земля!11/Земля!9/Земля!10/Земля!25"]
+position = Vector2( 253, 0 )
+texture = ExtResource( 6 )
+
+[node name="Земля!26" type="Sprite" parent="Фон/Земля!/Земля!11/Земля!9/Земля!10/Земля!25"]
+position = Vector2( 0, -251.16 )
+texture = ExtResource( 6 )
+
+[node name="Земля!27" type="Sprite" parent="Фон/Земля!/Земля!11/Земля!9/Земля!10/Земля!25/Земля!26"]
+position = Vector2( 511, 753.912 )
+texture = ExtResource( 6 )
+
+[node name="Земля!28" type="Sprite" parent="Фон/Земля!/Земля!11/Земля!9/Земля!10/Земля!25/Земля!26"]
+position = Vector2( 508, 1.48669 )
+scale = Vector2( 1, 0.973384 )
+texture = ExtResource( 6 )
+
+[node name="Земля!26" type="Sprite" parent="Фон/Земля!/Земля!11/Земля!9/Земля!10/Земля!25/Земля!26"]
+position = Vector2( 256, 1.48669 )
+scale = Vector2( 1, 0.973384 )
+texture = ExtResource( 6 )
+
+[node name="Земля!29" type="Sprite" parent="Фон/Земля!/Земля!11/Земля!9/Земля!10/Земля!25/Земля!26/Земля!26"]
+position = Vector2( -258, -252 )
+texture = ExtResource( 6 )
+
+[node name="ТраваПравая" type="Sprite" parent="Фон/Земля!/Земля!11/Земля!9/Земля!10/Земля!25/Земля!26/Земля!26"]
+position = Vector2( -445, 279 )
+scale = Vector2( 1.11789, 0.759207 )
+texture = ExtResource( 8 )
+
+[node name="ПлатформаЗемли3" type="Sprite" parent="Фон/Земля!/Земля!11/Земля!9/Земля!10/Земля!25/Земля!26/Земля!26/ТраваПравая"]
+position = Vector2( 120.932, -192.526 )
+rotation = -1.57781
+scale = Vector2( 1.31713, 1.12449 )
+texture = ExtResource( 5 )
+
+[node name="ПлатформаЗемли2" type="Sprite" parent="Фон/Земля!/Земля!11/Земля!9/Земля!10/Земля!25/Земля!26/Земля!26/ТраваПравая/ПлатформаЗемли3"]
+position = Vector2( 321.525, 0.196289 )
+scale = Vector2( 1.51178, 1.00762 )
+texture = ExtResource( 5 )
+
+[node name="Земля!25" type="Sprite" parent="Фон/Земля!/Земля!11/Земля!9/Земля!10/Земля!25/Земля!26/Земля!26"]
+position = Vector2( 255, 512 )
+scale = Vector2( 1, 1.02734 )
+texture = ExtResource( 6 )
+
+[node name="Земля!13" type="Sprite" parent="Фон/Земля!"]
+position = Vector2( -2025, -1 )
+texture = ExtResource( 6 )
+
+[node name="Земля!2" type="Sprite" parent="Фон/Земля!/Земля!13"]
+position = Vector2( -1518, 0 )
+texture = ExtResource( 6 )
+
+[node name="Земля!4" type="Sprite" parent="Фон/Земля!/Земля!13"]
+position = Vector2( -1264, 0 )
+texture = ExtResource( 6 )
+
+[node name="Земля!6" type="Sprite" parent="Фон/Земля!/Земля!13"]
+position = Vector2( -1015, 0 )
+texture = ExtResource( 6 )
+
+[node name="Земля!7" type="Sprite" parent="Фон/Земля!/Земля!13"]
+position = Vector2( -767, 0 )
+texture = ExtResource( 6 )
+
+[node name="Земля!8" type="Sprite" parent="Фон/Земля!/Земля!13"]
+position = Vector2( -511, 0 )
+texture = ExtResource( 6 )
+
+[node name="Земля!9" type="Sprite" parent="Фон/Земля!/Земля!13"]
+position = Vector2( -256, 1 )
+texture = ExtResource( 6 )
+
+[node name="Земля!3" type="Sprite" parent="Фон/Земля!"]
+position = Vector2( 995, 472 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!12" type="Sprite" parent="Фон/Земля!"]
+position = Vector2( 1237, 471 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!21" type="Sprite" parent="Фон/Земля!"]
+position = Vector2( 742, 477 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!8" type="Sprite" parent="Фон/Земля!/Земля!21"]
+position = Vector2( 876, -3 )
+texture = ExtResource( 6 )
+
+[node name="Земля!22" type="Sprite" parent="Фон/Земля!"]
+position = Vector2( 736, 722 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!3" type="Sprite" parent="Фон/Земля!/Земля!22"]
+position = Vector2( 251, 0 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!12" type="Sprite" parent="Фон/Земля!/Земля!22/Земля!3"]
+position = Vector2( 251, -1 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!4" type="Sprite" parent="Фон/Земля!/Земля!22/Земля!3"]
+position = Vector2( 761, 5 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!4" type="Sprite" parent="Фон/Земля!/Земля!22"]
+position = Vector2( 1261, 3 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!12" type="Sprite" parent="Фон/Земля!/Земля!22/Земля!4"]
+position = Vector2( 251, -1 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!4" type="Sprite" parent="Фон/Земля!/Земля!22/Земля!4"]
+position = Vector2( 760, 0 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!5" type="Sprite" parent="Фон/Земля!/Земля!22/Земля!4"]
+position = Vector2( 505, 0 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!19" type="Sprite" parent="Фон/Земля!/Земля!22"]
+position = Vector2( 756, 0 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!12" type="Sprite" parent="Фон/Земля!/Земля!22/Земля!19"]
+position = Vector2( 254, -248 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!20" type="Sprite" parent="Фон/Земля!/Земля!22"]
+position = Vector2( 7, -497 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!3" type="Sprite" parent="Фон/Земля!/Земля!22/Земля!20"]
+position = Vector2( 251, 0 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!12" type="Sprite" parent="Фон/Земля!/Земля!22/Земля!20"]
+position = Vector2( 502, -1 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!12" type="Sprite" parent="Фон/Земля!/Земля!22/Земля!20/Земля!12"]
+position = Vector2( 750, 0 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!3" type="Sprite" parent="Фон/Земля!/Земля!22/Земля!20/Земля!12"]
+position = Vector2( 500, 0 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!14" type="Sprite" parent="Фон/Земля!/Земля!22/Земля!20/Земля!12"]
+position = Vector2( 248, 1 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!21" type="Sprite" parent="Фон/Земля!/Земля!22"]
+position = Vector2( 1266, -251 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!3" type="Sprite" parent="Фон/Земля!/Земля!22/Земля!21"]
+position = Vector2( 251, 0 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!12" type="Sprite" parent="Фон/Земля!/Земля!22/Земля!21"]
+position = Vector2( 502, -1 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!12" type="Sprite" parent="Фон/Земля!/Земля!22/Земля!21/Земля!12"]
+position = Vector2( 255, -247 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!3" type="Sprite" parent="Фон/Земля!/Земля!22/Земля!21/Земля!12"]
+position = Vector2( 0, -246 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!14" type="Sprite" parent="Фон/Земля!/Земля!22/Земля!21/Земля!12"]
+position = Vector2( 255, -1 )
+texture = ExtResource( 6 )
+offset = Vector2( 128, 0 )
+
+[node name="Земля!10" type="Sprite" parent="Фон/Земля!"]
+position = Vector2( 2379, 223 )
+texture = ExtResource( 6 )
+
+[node name="Земля!24" type="Sprite" parent="Фон/Земля!"]
+position = Vector2( 2891, -32 )
+texture = ExtResource( 6 )
+
+[node name="Земля!25" type="Sprite" parent="Фон/Земля!/Земля!24"]
+position = Vector2( 250, 0 )
+texture = ExtResource( 6 )
+
+[node name="Земля!27" type="Sprite" parent="Фон/Земля!/Земля!24"]
+position = Vector2( 247, -510 )
+texture = ExtResource( 6 )
+
+[node name="Земля!28" type="Sprite" parent="Фон/Земля!/Земля!24"]
+position = Vector2( -9, -511 )
+texture = ExtResource( 6 )
+
+[node name="КривоеОблако(5)-no-bg-preview(carvephotos)" type="Sprite" parent="Фон"]
+position = Vector2( 1329, 1404 )
+texture = ExtResource( 20 )
+
+[node name="КрасивоеОблачко-no-bg-preview(carvephotos)" type="Sprite" parent="Фон/КривоеОблако(5)-no-bg-preview(carvephotos)"]
+position = Vector2( -601.5, -145.5 )
+scale = Vector2( 1.3275, 2.21094 )
+texture = ExtResource( 16 )
+
+[node name="СтранноеОблачко-no-bg-preview(carvephotos)" type="Sprite" parent="Фон/КривоеОблако(5)-no-bg-preview(carvephotos)"]
+position = Vector2( -1303, 210 )
+scale = Vector2( 0.938597, 1.16346 )
+texture = ExtResource( 15 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Фон"]
+position = Vector2( 5449.81, 2840 )
+shape = SubResource( 5 )
+
+[node name="Коряга1-no-bg-preview(carvephotos)" parent="Фон" instance=ExtResource( 21 )]
+
+[node name="Коряга2-no-bg-preview(carvephotos)(1)" parent="Фон/Коряга1-no-bg-preview(carvephotos)" instance=ExtResource( 22 )]
+position = Vector2( 961.92, -164.115 )
+rotation = -0.292701
+scale = Vector2( 0.729707, 0.874099 )
+
+[node name="gg" parent="Фон" instance=ExtResource( 1 )]
+position = Vector2( 1508, 1963 )
+rotation = -0.0134481
+
+[node name="Platform2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 4133, 1663 )

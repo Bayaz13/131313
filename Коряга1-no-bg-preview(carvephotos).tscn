@@ -1,0 +1,236 @@
+[gd_scene load_steps=26 format=2]
+
+[ext_resource path="res://картинки/обычные/Красивый_Камень_2_no_bg_preview_carve_photos.png" type="Texture" id=1]
+[ext_resource path="res://картинки/магич/Коряга 1-no-bg-preview (carve.photos).png" type="Texture" id=2]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 27.7256
+
+[sub_resource type="SegmentShape2D" id=3]
+a = Vector2( -60.5544, -28.2244 )
+b = Vector2( -28.6206, -20.5129 )
+
+[sub_resource type="SegmentShape2D" id=4]
+a = Vector2( -1186.71, -5648.19 )
+b = Vector2( -1255.89, -5582.56 )
+
+[sub_resource type="SegmentShape2D" id=5]
+a = Vector2( -235.52, 18.4399 )
+b = Vector2( -171.978, 14.4155 )
+
+[sub_resource type="SegmentShape2D" id=6]
+a = Vector2( -168.861, 11.8844 )
+b = Vector2( -144.421, 2.92725 )
+
+[sub_resource type="SegmentShape2D" id=7]
+a = Vector2( -143.174, 3.34735 )
+b = Vector2( -137.699, -20.5901 )
+
+[sub_resource type="SegmentShape2D" id=8]
+a = Vector2( -136.452, -20.17 )
+b = Vector2( -143.448, -41.1454 )
+
+[sub_resource type="SegmentShape2D" id=9]
+a = Vector2( -142.762, -40.5566 )
+b = Vector2( -139.71, -47.0483 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 22.732, 12.5338 )
+
+[sub_resource type="RectangleShape2D" id=24]
+extents = Vector2( 35.9956, 11.811 )
+
+[sub_resource type="SegmentShape2D" id=11]
+a = Vector2( -138.963, -49.6612 )
+b = Vector2( -140.09, -56.4857 )
+
+[sub_resource type="SegmentShape2D" id=12]
+a = Vector2( -140.651, -56.3165 )
+b = Vector2( -131.798, -59.7805 )
+
+[sub_resource type="SegmentShape2D" id=13]
+a = Vector2( -131.673, -59.0222 )
+b = Vector2( -107.883, -4.10413 )
+
+[sub_resource type="SegmentShape2D" id=14]
+a = Vector2( -108.444, -3.935 )
+b = Vector2( -13.0432, -18.3571 )
+
+[sub_resource type="SegmentShape2D" id=15]
+a = Vector2( -14.1655, -18.0189 )
+b = Vector2( 35.5134, -56.0735 )
+
+[sub_resource type="SegmentShape2D" id=16]
+a = Vector2( 35.0774, -55.1461 )
+b = Vector2( 13.4634, -11.2211 )
+
+[sub_resource type="SegmentShape2D" id=18]
+a = Vector2( 126.591, 3.24286 )
+b = Vector2( 81.3887, 18.4564 )
+
+[sub_resource type="SegmentShape2D" id=17]
+a = Vector2( 12.7769, -11.8103 )
+b = Vector2( 78.8936, 17.6163 )
+
+[sub_resource type="SegmentShape2D" id=19]
+a = Vector2( 128.649, 5.01044 )
+b = Vector2( 99.353, 27.3709 )
+
+[sub_resource type="CircleShape2D" id=23]
+radius = 12.8199
+
+[sub_resource type="SegmentShape2D" id=22]
+a = Vector2( 162.156, 40.284 )
+b = Vector2( 204.794, 13.107 )
+
+[sub_resource type="SegmentShape2D" id=20]
+a = Vector2( 98.792, 27.5401 )
+b = Vector2( 131.099, 37.7037 )
+
+[sub_resource type="SegmentShape2D" id=21]
+a = Vector2( 129.727, 36.5252 )
+b = Vector2( 165.708, 36.8257 )
+
+[node name="Коряга1-no-bg-preview(carvephotos)" type="Sprite"]
+position = Vector2( 3831, 2190 )
+rotation = 0.219418
+scale = Vector2( 1.73937, 1.28716 )
+texture = ExtResource( 2 )
+
+[node name="КрасивыйКамень2NoBgPreviewCarvePhotos" type="Sprite" parent="."]
+position = Vector2( 210.922, 86.7803 )
+rotation = -0.31024
+scale = Vector2( 0.584622, 0.716776 )
+texture = ExtResource( 1 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="КрасивыйКамень2NoBgPreviewCarvePhotos"]
+position = Vector2( -11.5894, -226.151 )
+rotation = 0.199919
+scale = Vector2( 1.51715, 1.7087 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="КрасивыйКамень2NoBgPreviewCarvePhotos/StaticBody2D"]
+position = Vector2( 56.566, 123.609 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="КрасивыйКамень2NoBgPreviewCarvePhotos/StaticBody2D"]
+position = Vector2( 18.4007, 127.472 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="КрасивыйКамень2NoBgPreviewCarvePhotos/StaticBody2D"]
+position = Vector2( 97.609, 109.269 )
+rotation = -0.185501
+scale = Vector2( 1, 0.999999 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="КрасивыйКамень2NoBgPreviewCarvePhotos/StaticBody2D"]
+position = Vector2( -115.854, 2249.41 )
+rotation = 0.30482
+scale = Vector2( 0.424837, 0.372319 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="КрасивыйКамень2NoBgPreviewCarvePhotos/StaticBody2D"]
+position = Vector2( -182.427, 45.3755 )
+rotation = 0.0495896
+scale = Vector2( 1.10935, 0.838793 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="КрасивыйКамень2NoBgPreviewCarvePhotos/StaticBody2D/CollisionShape2D4"]
+shape = SubResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="КрасивыйКамень2NoBgPreviewCarvePhotos/StaticBody2D/CollisionShape2D4/CollisionShape2D"]
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="КрасивыйКамень2NoBgPreviewCarvePhotos/StaticBody2D/CollisionShape2D4/CollisionShape2D/CollisionShape2D"]
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="КрасивыйКамень2NoBgPreviewCarvePhotos/StaticBody2D/CollisionShape2D4/CollisionShape2D/CollisionShape2D/CollisionShape2D"]
+shape = SubResource( 9 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="КрасивыйКамень2NoBgPreviewCarvePhotos/StaticBody2D/CollisionShape2D4"]
+position = Vector2( -216.211, 32.0045 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 10 )
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="КрасивыйКамень2NoBgPreviewCarvePhotos/StaticBody2D"]
+position = Vector2( -388.535, 79.1796 )
+rotation = 0.0495896
+scale = Vector2( 1.10935, 0.838793 )
+shape = SubResource( 24 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="КрасивыйКамень2NoBgPreviewCarvePhotos/StaticBody2D"]
+position = Vector2( -182.427, 45.3754 )
+rotation = 0.0495896
+scale = Vector2( 1.10935, 0.838793 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="КрасивыйКамень2NoBgPreviewCarvePhotos/StaticBody2D"]
+position = Vector2( -182.427, 45.3754 )
+rotation = 0.0495896
+scale = Vector2( 1.10935, 0.838793 )
+shape = SubResource( 12 )
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="КрасивыйКамень2NoBgPreviewCarvePhotos/StaticBody2D"]
+position = Vector2( -182.427, 45.3754 )
+rotation = 0.0495896
+scale = Vector2( 1.10935, 0.838793 )
+shape = SubResource( 13 )
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="КрасивыйКамень2NoBgPreviewCarvePhotos/StaticBody2D"]
+position = Vector2( -182.427, 45.3754 )
+rotation = 0.0495896
+scale = Vector2( 1.10935, 0.838793 )
+shape = SubResource( 14 )
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="КрасивыйКамень2NoBgPreviewCarvePhotos/StaticBody2D"]
+position = Vector2( -182.427, 45.3754 )
+rotation = 0.0495896
+scale = Vector2( 1.10935, 0.838793 )
+shape = SubResource( 15 )
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="КрасивыйКамень2NoBgPreviewCarvePhotos/StaticBody2D"]
+position = Vector2( -182.427, 45.3754 )
+rotation = 0.0495896
+scale = Vector2( 1.10935, 0.838793 )
+shape = SubResource( 16 )
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="КрасивыйКамень2NoBgPreviewCarvePhotos/StaticBody2D"]
+position = Vector2( -182.427, 45.3754 )
+rotation = 0.0495896
+scale = Vector2( 1.10935, 0.838793 )
+shape = SubResource( 18 )
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="КрасивыйКамень2NoBgPreviewCarvePhotos/StaticBody2D"]
+position = Vector2( -182.427, 45.3754 )
+rotation = 0.0495896
+scale = Vector2( 1.10935, 0.838793 )
+shape = SubResource( 17 )
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="КрасивыйКамень2NoBgPreviewCarvePhotos/StaticBody2D"]
+position = Vector2( -182.427, 45.3754 )
+rotation = 0.0495896
+scale = Vector2( 1.10935, 0.838793 )
+shape = SubResource( 19 )
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="КрасивыйКамень2NoBgPreviewCarvePhotos/StaticBody2D"]
+position = Vector2( 46.5161, 78.7546 )
+rotation = 0.0495896
+scale = Vector2( 1.10935, 0.838793 )
+shape = SubResource( 23 )
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="КрасивыйКамень2NoBgPreviewCarvePhotos/StaticBody2D"]
+position = Vector2( -182.427, 45.3754 )
+rotation = 0.0495896
+scale = Vector2( 1.10935, 0.838793 )
+shape = SubResource( 22 )
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="КрасивыйКамень2NoBgPreviewCarvePhotos/StaticBody2D"]
+position = Vector2( -182.427, 45.3754 )
+rotation = 0.0495896
+scale = Vector2( 1.10935, 0.838793 )
+shape = SubResource( 20 )
+
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="КрасивыйКамень2NoBgPreviewCarvePhotos/StaticBody2D"]
+position = Vector2( -182.427, 45.3754 )
+rotation = 0.0495896
+scale = Vector2( 1.10935, 0.838793 )
+shape = SubResource( 21 )
